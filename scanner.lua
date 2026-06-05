@@ -1,21 +1,20 @@
 BARREL_BLOCK = "sc-goodies:iron_barrel"
 
-CATEGORIES = [  
-    logs = "logs",
-    planks = "planks",
-    ores = "ores",
-    valuables = "valuables",
-    stones = "stones",
-    misc = "misc"
-]
+CATEGORIES = { }
+CATEGORIES.logs = "logs"
+CATEGORIES.planks = "planks"
+CATEGORIES.ores = "ores"
+CATEGORIES.valuables = "valuables"
+CATEGORIES.stones = "stones"
+CATEGORIES.misc = "misc"
 
-CATEGORIES_REGEX = [
-    [CATEGORIES.logs] = "log",
-    [CATEGORIES.planks] = "plank",
-    [CATEGORIES.ores] = "ore",
-    [CATEGORIES.valuables] = "diamond|emerald|netherite",
-    [CATEGORIES.stones] = "stone",
-]
+CATEGORIES_REGEX = {}
+CATEGORIES_REGEX[CATEGORIES.logs] = "log"
+CATEGORIES_REGEX[CATEGORIES.planks] = "plank"
+CATEGORIES_REGEX[CATEGORIES.ores] = "ore"
+CATEGORIES_REGEX[CATEGORIES.valuables] = "diamond|emerald|netherite"
+CATEGORIES_REGEX[CATEGORIES.stones] = "stone"
+
 
 function get_barrels()
     local peripherals = peripheral.getNames()
